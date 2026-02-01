@@ -1,0 +1,100 @@
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-30px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes dance {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  10% {
+    transform: translateY(-20px) rotate(-8deg) scale(1.05);
+  }
+  20% {
+    transform: translateY(0) rotate(8deg) scale(1);
+  }
+  30% {
+    transform: translateY(-25px) rotate(-5deg) scale(1.08);
+  }
+  40% {
+    transform: translateY(0) rotate(5deg) scale(1);
+  }
+  50% {
+    transform: translateY(-15px) rotate(0deg) scale(1.1);
+  }
+  60% {
+    transform: translateY(0) rotate(-8deg) scale(1);
+  }
+  70% {
+    transform: translateY(-20px) rotate(8deg) scale(1.05);
+  }
+  80% {
+    transform: translateY(0) rotate(-5deg) scale(1);
+  }
+  90% {
+    transform: translateY(-10px) rotate(5deg) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes tailWag {
+  0%, 100% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes earWiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.dancing {
+  animation: dance 1.2s ease-in-out infinite;
+  will-change: transform;
+}
+
+.paused {
+  animation-play-state: paused;
+}
